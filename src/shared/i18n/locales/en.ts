@@ -1,0 +1,60 @@
+export const en = {
+  app: {
+    title: "Day planner",
+    subtitle: "Plan one focused day with clear time slots.",
+  },
+  actions: {
+    cancel: "Cancel",
+    close: "Close",
+    create: "Create",
+    createTask: "Create task",
+    delete: "Delete",
+    edit: "Edit",
+    nextDay: "Next day",
+    previousDay: "Previous day",
+    save: "Save",
+    today: "Today",
+  },
+  calendar: {
+    emptySlot: "Free",
+    loading: "Loading tasks...",
+    selectedDate: "Selected date",
+    totalTasks: "{{count}} tasks",
+  },
+  deleteTask: {
+    body: "This action cannot be undone.",
+    title: "Delete task?",
+  },
+  form: {
+    date: "Date",
+    endTime: "End time",
+    startTime: "Start time",
+    title: "Title",
+    titlePlaceholder: "Task name",
+    createTitle: "Create task",
+    editTitle: "Edit task",
+  },
+  language: {
+    en: "EN",
+    label: "Language",
+    uk: "UK",
+  },
+  status: {
+    active: "In progress",
+    done: "Done",
+    pendingHoursMinutes: "{{hours}} h {{minutes}} min",
+    pendingMinutesOnly: "{{minutes}} min",
+    pending: "In {{minutes}} min",
+    toggleTimeDisplay: "Toggle pending time format",
+  },
+  validation: {
+    conflict: "This time is already occupied by another task.",
+    dateRequired: "Choose a date.",
+    endAfterStart: "End time must be later than start time.",
+    noCrossDay:
+      "Not today. Rest and continue tomorrow with a fresh head.",
+    requiredTitle: "Enter a task title.",
+    step: "Time must use 30-minute steps.",
+    timeRequired: "Choose start and end time.",
+  },
+};

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "seed-1",
+    "title": "Morning planning",
+    "date": "2026-05-01",
+    "startTime": "09:00",
+    "endTime": "09:30"
+  },
+  {
+    "id": "seed-2",
+    "title": "Design review",
+    "date": "2026-05-01",
+    "startTime": "10:30",
+    "endTime": "11:30"
+  },
+  {
+    "id": "seed-3",
+    "title": "Focus coding",
+    "date": "2026-05-01",
+    "startTime": "13:00",
+    "endTime": "15:00"
+  },
+  {
+    "id": "seed-4",
+    "title": "Tomorrow sync",
+    "date": "2026-05-02",
+    "startTime": "12:00",
+    "endTime": "12:30"
+  }
+]

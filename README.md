@@ -48,6 +48,37 @@ The MVP should include:
 
 Anything outside this list should be considered optional or post-release unless it is required to make the MVP work correctly.
 
+## How To Run
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the dev server:
+
+```bash
+npm run dev
+```
+
+Run unit tests:
+
+```bash
+npm test
+```
+
+Check the production build:
+
+```bash
+npm run build
+```
+
+## Learning Notes
+
+Additional implementation notes are available in `docs/IMPLEMENTATION_NOTES.md`.
+They explain why the app uses RTK Query with localStorage, why task status is derived, and why the app has one global time ticker.
+
 ## Post-Release Improvements
 
 Possible improvements after the MVP:
@@ -519,6 +550,37 @@ MVP має включати:
 - невеликий набір unit tests для критичних time/scheduling helpers.
 
 Все поза цим списком вважається optional або post-release, якщо воно не потрібне для коректної роботи MVP.
+
+## Як запустити
+
+Встановити залежності:
+
+```bash
+npm install
+```
+
+Запустити dev server:
+
+```bash
+npm run dev
+```
+
+Запустити unit tests:
+
+```bash
+npm test
+```
+
+Перевірити production build:
+
+```bash
+npm run build
+```
+
+## Навчальні нотатки
+
+Додаткові implementation notes є в `docs/IMPLEMENTATION_NOTES.md`.
+Там пояснено, навіщо RTK Query використовується разом із localStorage, чому task status є derived state, і чому в застосунку один глобальний time ticker.
 
 ## Post-Release Improvements
 

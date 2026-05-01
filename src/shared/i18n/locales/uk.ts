@@ -1,0 +1,60 @@
+export const uk = {
+  app: {
+    title: "План дня",
+    subtitle: "Плануй день через зрозумілі часові слоти.",
+  },
+  actions: {
+    cancel: "Скасувати",
+    close: "Закрити",
+    create: "Створити",
+    createTask: "Створити задачу",
+    delete: "Видалити",
+    edit: "Редагувати",
+    nextDay: "Наступний день",
+    previousDay: "Попередній день",
+    save: "Зберегти",
+    today: "Сьогодні",
+  },
+  calendar: {
+    emptySlot: "Вільно",
+    loading: "Завантаження задач...",
+    selectedDate: "Обрана дата",
+    totalTasks: "{{count}} задач",
+  },
+  deleteTask: {
+    body: "Цю дію не можна буде скасувати.",
+    title: "Видалити задачу?",
+  },
+  form: {
+    date: "Дата",
+    endTime: "Час завершення",
+    startTime: "Час початку",
+    title: "Назва",
+    titlePlaceholder: "Назва задачі",
+    createTitle: "Створити задачу",
+    editTitle: "Редагувати задачу",
+  },
+  language: {
+    en: "EN",
+    label: "Мова",
+    uk: "UA",
+  },
+  status: {
+    active: "В процесі",
+    done: "Завершено",
+    pendingHoursMinutes: "{{hours}} год {{minutes}} хв",
+    pendingMinutesOnly: "{{minutes}} хв",
+    pending: "Через {{minutes}} хв",
+    toggleTimeDisplay: "Перемкнути формат часу до початку",
+  },
+  validation: {
+    conflict: "Цей час уже зайнятий іншою задачею.",
+    dateRequired: "Обери дату.",
+    endAfterStart: "Час завершення має бути пізніше за початок.",
+    noCrossDay:
+      "Та ні, іди відпочинь і завтра на свіжу голову продовжиш.",
+    requiredTitle: "Введи назву задачі.",
+    step: "Час має бути кратний 30 хвилинам.",
+    timeRequired: "Обери час початку й завершення.",
+  },
+};
