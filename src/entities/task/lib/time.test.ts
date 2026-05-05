@@ -6,6 +6,7 @@ import {
   getTaskDurationSlots,
   getTaskStartSlot,
   getTaskStatus,
+  isValidDateInput,
   isThirtyMinuteStep,
   splitMinutes,
 } from "./time";
@@ -53,6 +54,12 @@ describe("task time helpers", () => {
     expect(isThirtyMinuteStep("09:00")).toBe(true);
     expect(isThirtyMinuteStep("09:30")).toBe(true);
     expect(isThirtyMinuteStep("09:15")).toBe(false);
+  });
+
+  it("validates date input strings strictly", () => {
+    expect(isValidDateInput("2026-05-01")).toBe(true);
+    expect(isValidDateInput("2026-02-31")).toBe(false);
+    expect(isValidDateInput("")).toBe(false);
   });
 
   it("calculates grid placement values", () => {

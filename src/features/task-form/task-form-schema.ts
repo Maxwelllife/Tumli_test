@@ -1,10 +1,13 @@
 import { z } from "zod";
 
-import { validateTaskTimeRange } from "../../entities/task";
+import { isValidDateInput, validateTaskTimeRange } from "../../entities/task";
 
 export const taskFormSchema = z
   .object({
-    date: z.string().min(1, "dateRequired"),
+    date: z
+      .string()
+      .min(1, "dateRequired")
+      .refine(isValidDateInput, "dateInvalid"),
     endTime: z.string().min(1, "timeRequired"),
     startTime: z.string().min(1, "timeRequired"),
     title: z.string().trim().min(1, "requiredTitle"),

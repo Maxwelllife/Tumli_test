@@ -27,6 +27,7 @@ export function Modal({
 }: ModalProps) {
   const { t } = useTranslation();
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const modalRootRef = useRef<HTMLDivElement>(null);
   const previouslyFocusedElement = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -34,7 +35,12 @@ export function Modal({
       return;
     }
 
-    previouslyFocusedElement.current = document.activeElement as HTMLElement;
+    const modalRoot = modalRootRef.current;
+    const activeElement = document.activeElement as HTMLElement;
+
+    if (!modalRoot?.contains(activeElement)) {
+      previouslyFocusedElement.current = activeElement;
+    }
 
     const focusTarget = initialFocusRef?.current ?? closeButtonRef.current;
     focusTarget?.focus();
@@ -49,7 +55,14 @@ export function Modal({
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
-      previouslyFocusedElement.current?.focus();
+
+      window.setTimeout(() => {
+        if (modalRoot && document.body.contains(modalRoot)) {
+          return;
+        }
+
+        previouslyFocusedElement.current?.focus();
+      }, 0);
     };
   }, [initialFocusRef, isOpen, onClose]);
 
@@ -59,6 +72,7 @@ export function Modal({
 
   return (
     <div
+      ref={modalRootRef}
       aria-modal="true"
       className="fixed inset-0 z-50 flex items-end justify-center bg-black/35 px-3 py-4 sm:items-center"
       role="dialog"

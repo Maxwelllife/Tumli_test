@@ -5,6 +5,7 @@ import {
   isAfter,
   isBefore,
   isSameDay,
+  isValid,
   parse,
   startOfDay,
 } from "date-fns";
@@ -19,11 +20,19 @@ export function formatDateInput(date: Date) {
 }
 
 export function shiftDate(date: string, amount: number) {
-  return formatDateInput(addDays(parseDate(date), amount));
+  const baseDate = isValidDateInput(date) ? parseDate(date) : new Date();
+
+  return formatDateInput(addDays(baseDate, amount));
 }
 
 export function parseDate(date: string) {
   return parse(date, "yyyy-MM-dd", new Date());
+}
+
+export function isValidDateInput(date: string) {
+  const parsedDate = parseDate(date);
+
+  return isValid(parsedDate) && formatDateInput(parsedDate) === date;
 }
 
 export function parseTaskDateTime(date: string, time: string) {
@@ -31,6 +40,10 @@ export function parseTaskDateTime(date: string, time: string) {
 }
 
 export function formatHumanDate(date: string) {
+  if (!isValidDateInput(date)) {
+    return "";
+  }
+
   return format(parseDate(date), "EEE, MMM d");
 }
 

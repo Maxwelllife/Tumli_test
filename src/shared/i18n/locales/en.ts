@@ -49,6 +49,7 @@ export const en = {
   },
   validation: {
     conflict: "This time is already occupied by another task.",
+    dateInvalid: "Enter a valid date.",
     dateRequired: "Choose a date.",
     endAfterStart: "End time must be later than start time.",
     noCrossDay:

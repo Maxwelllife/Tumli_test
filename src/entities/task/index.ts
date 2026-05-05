@@ -15,6 +15,7 @@ export {
   getTaskStartSlot,
   getTaskStatus,
   getTimeOptions,
+  isValidDateInput,
   shiftDate,
   splitMinutes,
   SLOT_STEP_MINUTES,

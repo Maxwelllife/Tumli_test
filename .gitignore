@@ -5,3 +5,5 @@ dist
 coverage
 .vite
 npm-debug.log*
+README_UA.md
+README_UA_STAGE_*.md

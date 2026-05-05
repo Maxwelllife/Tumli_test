@@ -19,7 +19,7 @@ export const uk = {
     emptySlot: "Вільно",
     loading: "Завантаження задач...",
     selectedDate: "Обрана дата",
-    totalTasks: "{{count}} задач",
+    totalTasks: "{{count}} задач(і)",
   },
   deleteTask: {
     body: "Цю дію не можна буде скасувати.",
@@ -49,6 +49,7 @@ export const uk = {
   },
   validation: {
     conflict: "Цей час уже зайнятий іншою задачею.",
+    dateInvalid: "Введи коректну дату.",
     dateRequired: "Обери дату.",
     endAfterStart: "Час завершення має бути пізніше за початок.",
     noCrossDay:
