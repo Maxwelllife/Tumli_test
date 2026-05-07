@@ -26,5 +26,47 @@
     "date": "2026-05-02",
     "startTime": "12:00",
     "endTime": "12:30"
+  },
+  {
+    "id": "seed-5",
+    "title": "Обговорення проєкту",
+    "date": "2026-05-08",
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "seed-6",
+    "title": "Мітінг meest.com",
+    "date": "2026-05-08",
+    "startTime": "13:30",
+    "endTime": "14:00"
+  },
+  {
+    "id": "seed-7",
+    "title": "Робота над помилками після обговорення проєкту",
+    "date": "2026-05-08",
+    "startTime": "14:00",
+    "endTime": "15:00"
+  },
+  {
+    "id": "seed-8",
+    "title": "Комплексний SEO аудит сайту uk.meest.com",
+    "date": "2026-05-08",
+    "startTime": "15:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "seed-9",
+    "title": "Комплексний SEO аудит сайту uk.meest.com",
+    "date": "2026-05-09",
+    "startTime": "09:00",
+    "endTime": "10:30"
+  },
+  {
+    "id": "seed-10",
+    "title": "Daily meet",
+    "date": "2026-05-09",
+    "startTime": "10:30",
+    "endTime": "11:00"
   }
 ]
